@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string dyelm, noWater;
+            string dyelm, noWater, bobColor;
             int books, score;
             double first, second;
 
@@ -33,6 +33,16 @@
                 Console.WriteLine("Incorrect");
             }
 
+            Console.WriteLine();
+            Console.WriteLine("What color is Doodle Bob?");
+            bobColor = Console.ReadLine();
+            if (bobColor.ToLower() == "White")
+                Console.WriteLine("Correct!");
+            //score = (score + 1);
+            else
+            {
+                Console.WriteLine("Incorrect");
+            }
 
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILYbdyelm?");
