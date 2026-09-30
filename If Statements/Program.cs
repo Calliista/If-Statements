@@ -38,6 +38,7 @@
             Console.WriteLine();
 
             //Simple Calculator
+            Console.WriteLine("Simple Calculator");
             Console.WriteLine("First number:");
             Double.TryParse(Console.ReadLine(), out first);
 
@@ -76,7 +77,7 @@
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
-            if (dyelm.ToLower() == "huh?")
+            if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
                 Console.WriteLine("Correct!");
                 //score = (score + 1);
             else
