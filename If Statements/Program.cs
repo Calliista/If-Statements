@@ -5,15 +5,25 @@
         static void Main(string[] args)
         {
             string dyelm, noWater, bobColor;
-            int books, score;
+            int inches, score, earthWeight;
             double first, second;
+
+            //Space boxing
+            Console.WriteLine("Space boxing");
+            Console.WriteLine("Please enter your current earth weight:");
+            earthWeight = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("I have information for the following planets:");
+            Console.WriteLine("   1. Venus   2. Mars   3. Jupiter");
+            Console.WriteLine("   1. Saturn   2. Uranus   3. Neptune");
+            Console.WriteLine("Which planet are you visiting?:");
+            Console.WriteLine();
 
             //Simple Calculator
             Console.WriteLine("First number:");
-            first = Convert.ToInt32(Console.ReadLine());
+            Double.TryParse(Console.ReadLine(), out first);
 
             Console.WriteLine("Second number:");
-            second = Convert.ToInt32(Console.ReadLine());
+            Double.TryParse(Console.ReadLine(), out second);
 
             Console.WriteLine($" {first} + {second} = {first+second}");
             Console.WriteLine();
@@ -24,8 +34,8 @@
             Console.WriteLine();
             Console.WriteLine("Fill in the blank");
             Console.WriteLine("Raccoons can crawl into holes and small as ____ inches");
-            books = Convert.ToInt32(Console.ReadLine());
-            if (books == 4)
+            inches = Convert.ToInt32(Console.ReadLine());
+            if (inches == 4)
                 Console.WriteLine("Correct!");
                 //score = (score + 1);
             else 
@@ -36,7 +46,7 @@
             Console.WriteLine();
             Console.WriteLine("What color is Doodle Bob?");
             bobColor = Console.ReadLine();
-            if (bobColor.ToLower() == "White")
+            if (bobColor.ToLower() == "white")
                 Console.WriteLine("Correct!");
             //score = (score + 1);
             else
@@ -45,7 +55,7 @@
             }
 
             Console.WriteLine();
-            Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILYbdyelm?");
+            Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
             if (dyelm.ToLower() == "huh?")
                 Console.WriteLine("Correct!");
@@ -58,11 +68,11 @@
             Console.WriteLine();
             Console.WriteLine("Which of the following doesn't have water in it?");
             Console.WriteLine("A. Fishbowl/Aquarium");
-            Console.WriteLine("B. Orange");
+            Console.WriteLine("B. Lemonade");
             Console.WriteLine("C. Doughnut");
             Console.WriteLine("D. Glass of water");
             noWater = Console.ReadLine();
-            if (noWater.ToLower() == "C" || noWater.ToLower() == "Dougnut" )
+            if (noWater.ToLower() == "C" || noWater.ToLower() == "Doughnut" )
                 Console.WriteLine("Correct!");
                 //score = (score + 1);
             else
