@@ -26,7 +26,7 @@
             if (planet.ToLower() == "venus")
                 Console.WriteLine(earthWeight * venus);
             if (planet.ToLower() == "mars")
-                Console.WriteLine(earthWeight * mars);
+                Console.WriteLine($"Your weight would be {earthWeight * mars} on that planet");
             if (planet.ToLower() == "jupiter")
                 Console.WriteLine(earthWeight * jupiter);
             if (planet.ToLower() == "saturn")
@@ -91,7 +91,7 @@
             Console.WriteLine("C. Doughnut");
             Console.WriteLine("D. Glass of water");
             noWater = Console.ReadLine();
-            if (noWater.ToLower() == "C" || noWater.ToLower() == "Doughnut" )
+            if (noWater.ToLower() == "c" || noWater.ToLower() == "doughnut" )
                 Console.WriteLine("Correct!");
                 //score = (score + 1);
             else
