@@ -4,11 +4,17 @@
     {
         static void Main(string[] args)
         {
-            string dyelm, noWater, bobColor;
+            string dyelm, noWater, bobColor, planet;
             int inches, score, earthWeight;
-            double first, second;
+            double first, second, venus, mars, jupiter, saturn, uranus, neptune;
 
             //Space boxing
+            venus = 0.78;
+            mars = 0.39;
+            jupiter = 2.65;
+            saturn = 1.17;
+            uranus = 1.05;
+            neptune = 1.23;
             Console.WriteLine("Space boxing");
             Console.WriteLine("Please enter your current earth weight:");
             earthWeight = Convert.ToInt32(Console.ReadLine());
@@ -16,6 +22,19 @@
             Console.WriteLine("   1. Venus   2. Mars   3. Jupiter");
             Console.WriteLine("   1. Saturn   2. Uranus   3. Neptune");
             Console.WriteLine("Which planet are you visiting?:");
+            planet = Console.ReadLine();
+            if (planet.ToLower() == "venus")
+                Console.WriteLine(earthWeight * venus);
+            if (planet.ToLower() == "mars")
+                Console.WriteLine(earthWeight * mars);
+            if (planet.ToLower() == "jupiter")
+                Console.WriteLine(earthWeight * jupiter);
+            if (planet.ToLower() == "saturn")
+                Console.WriteLine(earthWeight * saturn);
+            if (planet.ToLower() == "uranus")
+                Console.WriteLine(earthWeight * uranus);
+            if (planet.ToLower() == "neptune")
+                Console.WriteLine(earthWeight * neptune);
             Console.WriteLine();
 
             //Simple Calculator
