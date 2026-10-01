@@ -24,17 +24,17 @@
             Console.WriteLine("Which planet are you visiting?:");
             planet = Console.ReadLine();
             if (planet.ToLower() == "venus")
-                Console.WriteLine(earthWeight * venus);
+                Console.WriteLine($"Your weight would be {earthWeight * venus} on that planet");
             if (planet.ToLower() == "mars")
                 Console.WriteLine($"Your weight would be {earthWeight * mars} on that planet");
             if (planet.ToLower() == "jupiter")
-                Console.WriteLine(earthWeight * jupiter);
+                Console.WriteLine($"Your weight would be {earthWeight * jupiter} on that planet");
             if (planet.ToLower() == "saturn")
-                Console.WriteLine(earthWeight * saturn);
+                Console.WriteLine($"Your weight would be {earthWeight * saturn} on that planet");
             if (planet.ToLower() == "uranus")
-                Console.WriteLine(earthWeight * uranus);
+                Console.WriteLine($"Your weight would be {earthWeight * uranus} on that planet");
             if (planet.ToLower() == "neptune")
-                Console.WriteLine(earthWeight * neptune);
+                Console.WriteLine($"Your weight would be {earthWeight * neptune} on that planet");
             Console.WriteLine();
 
             //Simple Calculator
