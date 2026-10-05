@@ -19,8 +19,8 @@
             Console.WriteLine("Please enter your current earth weight:");
             earthWeight = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("I have information for the following planets:");
-            Console.WriteLine("   1. Venus   2. Mars   3. Jupiter");
-            Console.WriteLine("   1. Saturn   2. Uranus   3. Neptune");
+            Console.WriteLine("   Venus    Mars     Jupiter");
+            Console.WriteLine("   Saturn   Uranus   Neptune");
             Console.WriteLine("Which planet are you visiting?:");
             planet = Console.ReadLine();
             if (planet.ToLower() == "venus")
@@ -35,6 +35,10 @@
                 Console.WriteLine($"Your weight would be {earthWeight * uranus} on that planet");
             if (planet.ToLower() == "neptune")
                 Console.WriteLine($"Your weight would be {earthWeight * neptune} on that planet");
+            else
+            {
+                Console.WriteLine("Wrong answer");
+            }
             Console.WriteLine();
 
             //Simple Calculator
@@ -60,29 +64,34 @@
                 //score = (score + 1);
             else 
             {
-                Console.WriteLine("Incorrect");
+                if (inches >= 4)
+                    Console.WriteLine("Incorrect. Hint: The answer is lower than " + inches);
+                if (inches <= 4)
+                    Console.WriteLine("Incorrect. Hint: The answer is higher than " + inches);
             }
 
             Console.WriteLine();
             Console.WriteLine("What color is Doodle Bob?");
             bobColor = Console.ReadLine();
             if (bobColor.ToLower() == "white")
-                Console.WriteLine("Correct!");
+                Console.WriteLine("That's right!");
             //score = (score + 1);
             else
             {
-                Console.WriteLine("Incorrect");
+                Console.WriteLine("Incorrect. Hint: Doodle Bob is like spongebob. But if he were white and drawn poorly");
             }
 
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
             if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
-                Console.WriteLine("Correct!");
-                //score = (score + 1);
+                Console.WriteLine(">:(");
+            //score = (score + 1);
+            if (dyelm.ToLower() == "yes")
+                Console.WriteLine("*bites*");
             else
             {
-                Console.WriteLine("Incorrect");
+                Console.WriteLine("Wrong answer");
             }
 
             Console.WriteLine();
@@ -93,11 +102,11 @@
             Console.WriteLine("D. Glass of water");
             noWater = Console.ReadLine();
             if (noWater.ToLower() == "c" || noWater.ToLower() == "doughnut" )
-                Console.WriteLine("Correct!");
+                Console.WriteLine("yes.");
                 //score = (score + 1);
             else
             {
-                Console.WriteLine("Incorrect");
+                Console.WriteLine("no, that has water in it.");
             }
         }
     }
