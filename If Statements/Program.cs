@@ -78,17 +78,16 @@
             //score = (score + 1);
             else
             {
-                Console.WriteLine("Incorrect. Hint: Doodle Bob is like spongebob. But if he were white and drawn poorly");
+                Console.WriteLine("Incorrect. Hint: Doodle Bob is like spongebob. But if he were white instead of yellow and drawn poorly");
             }
 
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
-            if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
-                Console.WriteLine(">:(");
-            //score = (score + 1);
             if (dyelm.ToLower() == "yes")
                 Console.WriteLine("*bites*");
+            if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
+                Console.WriteLine(">:(     (Correct)");
             else
             {
                 Console.WriteLine("Wrong answer");
@@ -101,9 +100,9 @@
             Console.WriteLine("C. Doughnut");
             Console.WriteLine("D. Glass of water");
             noWater = Console.ReadLine();
-            if (noWater.ToLower() == "c" || noWater.ToLower() == "doughnut" )
+            if (noWater.ToLower() == "c" || noWater.ToLower() == "doughnut")
                 Console.WriteLine("yes.");
-                //score = (score + 1);
+            //score = (score + 1);
             else
             {
                 Console.WriteLine("no, that has water in it.");
