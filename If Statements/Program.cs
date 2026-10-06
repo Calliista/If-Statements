@@ -89,14 +89,14 @@
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
+            if (dyelm.ToLower() == "yes")
+            {
+                Console.WriteLine("*chomp*");
+            }
             if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
             {
                 Console.WriteLine(">:(");
                 score = (score + 1);
-            }
-            if (dyelm.ToLower() == "yes")
-            {
-                Console.WriteLine("*chomp*");
             }
             else
             {
@@ -130,7 +130,7 @@
             }
             else 
             {
-                Console.WriteLine(); 
+                Console.WriteLine($"{score}/4 You answered {score} questions correctly! That's {((score / 4) * 100)}%! "); 
             }
         }
     }
