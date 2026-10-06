@@ -60,8 +60,11 @@
             Console.WriteLine("Raccoons can crawl into holes and small as ____ inches");
             inches = Convert.ToInt32(Console.ReadLine());
             if (inches == 4)
+            {
                 Console.WriteLine("Correct!");
-                //score = (score + 1);
+                score = (score + 1);
+            }
+                
             else 
             {
                 if (inches >= 4)
@@ -74,8 +77,10 @@
             Console.WriteLine("What color is Doodle Bob?");
             bobColor = Console.ReadLine();
             if (bobColor.ToLower() == "white")
+            {
                 Console.WriteLine("That's right!");
-            //score = (score + 1);
+                score = (score + 1);
+            }
             else
             {
                 Console.WriteLine("Incorrect. Hint: Doodle Bob is like spongebob. But if he were white instead of yellow and drawn poorly");
@@ -84,13 +89,18 @@
             Console.WriteLine();
             Console.WriteLine("AAOTWYNTGATOYFNALTOYBTWCFBOYETIEWJASBAITTNNTBOBBAATDGBTGDWNDSGMOLBCATINIYITWTTIOTBYKTILY!bdyelm?");
             dyelm = Console.ReadLine();
-            if (dyelm.ToLower() == "yes")
-                Console.WriteLine("*bites*");
             if (dyelm.ToLower() == "huh?" || dyelm.ToLower() == "huh")
-                Console.WriteLine(">:(     (Correct)");
+            {
+                Console.WriteLine(">:(");
+                score = (score + 1);
+            }
+            if (dyelm.ToLower() == "yes")
+            {
+                Console.WriteLine("*chomp*");
+            }
             else
             {
-                Console.WriteLine("Wrong answer");
+                Console.WriteLine("(Wrong answer)");
             }
 
             Console.WriteLine();
@@ -101,11 +111,26 @@
             Console.WriteLine("D. Glass of water");
             noWater = Console.ReadLine();
             if (noWater.ToLower() == "c" || noWater.ToLower() == "doughnut")
+            {
                 Console.WriteLine("yes.");
-            //score = (score + 1);
+                score = (score + 1);
+            }
             else
             {
                 Console.WriteLine("no, that has water in it.");
+            }
+            Console.WriteLine();
+            if (score == 0)
+            {
+                Console.WriteLine("0/4 You didn't get any of the questions right! F-. 0.0%");
+            }
+            if (score == 4)
+            {
+                Console.WriteLine("4/4 Congrats! You answered them all correctly! 100.0 percent!");
+            }
+            else 
+            {
+                Console.WriteLine(); 
             }
         }
     }
