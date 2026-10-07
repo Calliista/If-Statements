@@ -130,7 +130,7 @@
             }
             else 
             {
-                Console.WriteLine($"{score}/4 You answered {score} questions correctly! That's {((score / 4) * 100)}%! "); 
+                Console.WriteLine($"{score}/4 You answered {score} questions correctly! That's {(score / 4.0) * 100}%! "); 
             }
         }
     }
